@@ -1,6 +1,7 @@
 <script>
   export let title = "El meu lloc web";
   import './Header.css';
+  import logo from '$lib/assets/LOGO.png';
 </script>
 
 <header class="flex items-center justify-between bg-[#454430] p-4 text-white">
@@ -10,4 +11,5 @@
   </nav>
 
   <h1 class="font-bold text-xl">{title}</h1>
+  <img class="logo" src={logo}>
 </header>
