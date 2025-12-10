@@ -1,7 +1,8 @@
 <script>
 	import './layout.css';
 	import favicon from '$lib/assets/favicon.svg';
-
+	import Header from '../components/Header/Header.svelte';
+	import Footer from '../components/Footer/Footer.svelte';
 	let { children } = $props();
 </script>
 
@@ -9,4 +10,12 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<Header title="LaserTag" />
+
+<main>
+  <slot />
+</main>
+
+<Footer/>
+
+

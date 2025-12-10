@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+  import './layout.css';
+  import mapa from '$lib/assets/Mapa_IES_vidreres_v2.svg';
+</script>
+
+<div class="mapa">
+    <img src={mapa}>
+</div>
